@@ -1,0 +1,221 @@
+/* =========================
+   GENERAL STYLES
+   ========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #222222;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: #f58220;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    background-color: #333333;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 25px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   HEADINGS
+   ========================= */
+
+h2 {
+    color: #c45100;
+    margin-top: 0;
+}
+
+h3 {
+    color: #444444;
+}
+
+
+/* =========================
+   LISTS
+   ========================= */
+
+ul,
+ol {
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   LINKS
+   ========================= */
+
+a {
+    color: #005a9c;
+}
+
+a:hover {
+    color: #003f6b;
+}
+
+
+/* =========================
+   GALLERY
+   ========================= */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery figure {
+    margin: 0;
+    text-align: center;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+}
+
+.gallery figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+/* =========================
+   EXTERNAL LINKS
+   ========================= */
+
+.external-links {
+    margin-top: 25px;
+}
+
+.external-links li {
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+.button {
+    display: inline-block;
+    background-color: #c45100;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #8f3c00;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+}
